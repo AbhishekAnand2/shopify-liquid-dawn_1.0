@@ -2,9 +2,17 @@
 
 {% schema %}
 {
-    "name": "Liquid-Ref",
+    "name": "Liquid Reference",
     "settings": [
-        
-        ]
+        {
+            "id": "liquid-ref",
+            "type": "text",
+            "label": "A reference for Shopify Liquid"
+        }
+    ],
+    "enabled_on": {
+        "templates": ["index","product","list-collections","collection"],
+        "groups": ["footer"]
+    }
 }
 {% endschema %}
